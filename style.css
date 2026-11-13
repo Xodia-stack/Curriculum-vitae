@@ -81,3 +81,6 @@ a.k:focus-visible { outline: 2px solid var(--prompt); outline-offset: 2px; }
   .out { animation: in .18s ease-out; }
   @keyframes in { from { opacity: .3; } to { opacity: 1; } }
 }
+
+/* Sans JavaScript : on cache la saisie et les boutons, qui ne marcheraient pas */
+.no-js .inputline, .no-js .chips { display: none; }

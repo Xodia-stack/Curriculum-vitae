@@ -239,6 +239,10 @@ const chips = document.getElementById('chips');
   chips.appendChild(b);
 });
 
+// Le script a bien chargé : on retire le résumé de secours et on active le terminal
+document.documentElement.classList.remove('no-js');
+log.innerHTML = '';
+
 print('<span class="d">Bienvenue sur le CV interactif de François Dumele.</span>');
 setTimeout(() => typeCommand('whoami'), 500);
 if (FINE_POINTER) input.focus({ preventScroll: true });

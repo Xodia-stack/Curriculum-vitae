@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="no-js">
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,23 +23,21 @@
         <i class="dot"></i><i class="dot"></i><i class="dot"></i>
         <span>visiteur@fdumele: ~/cv</span>
       </div>
-      <div id="screen">
-        <noscript>
-          <div class="out"><span class="t">François Dumele</span>, Développeur Full Stack
-          <span class="d">Aulnay-sous-Bois (93) · 8 ans de BTP et d'industrie, puis 4 ans de développement web</span>
+      <!-- Résumé visible si script.js ne se charge pas ou si JavaScript est désactivé. Le script le remplace au démarrage.
+             Pas d'espace entre les balises : #screen affiche les espaces tels quels (white-space: pre-wrap). -->
+      <div id="screen"><div id="log"><div class="out"><span class="t">François Dumele</span>, Développeur Full Stack
+<span class="d">Aulnay-sous-Bois (93) · 8 ans de BTP et d'industrie, puis 4 ans de développement web</span>
 
-          <span class="t">## Stack</span>
-            Java · TypeScript · React · Vue.js · Spring Boot · Node.js · PostgreSQL · Docker
+<span class="t">## Stack</span>
+Java · TypeScript · React · Vue.js · Spring Boot · Node.js · PostgreSQL · Docker
 
-          <span class="t">## Dernier poste</span>
-          Développeur Full Stack, Société Générale (sept. 2023 – sept. 2025)
+<span class="t">## Dernier poste</span>
+Développeur Full Stack, Société Générale (sept. 2023 – sept. 2025)
 
-          <span class="t">## Contact</span>
-          <a class="k" href="mailto:fjldumele@gmail.com">fjldumele@gmail.com</a>
+<span class="t">## Contact</span>
+<a class="k" href="mailto:fjldumele@gmail.com">fjldumele@gmail.com</a>
 
-          <span class="d">Active JavaScript pour la version interactive du CV.</span></div>
-        </noscript>
-        <div id="log"></div>
+<span class="d">La version interactive du CV n'a pas pu se charger.</span></div></div>
         <div class="inputline">
           <label for="cmd" class="p">visiteur@fdumele:~$</label>
           <input id="cmd" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="Tape une commande">
