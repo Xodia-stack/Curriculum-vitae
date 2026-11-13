@@ -83,7 +83,7 @@ const log = document.getElementById('log');
 const input = document.getElementById('cmd');
 const screen = document.getElementById('screen');
 const sr = document.getElementById('sr');
-const history = []; let hIndex = 0;
+const cmdHistory = []; let hIndex = 0
 
 function esc(s) { return s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 /* ---- Affichage progressif (effet machine à écrire) ---- */
@@ -181,7 +181,7 @@ function helpText() {
 function run(raw) {
   const cmd = raw.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   const name = ALIASES[cmd] || cmd;
-  if (name === 'clear') { if (cmd) { history.push(raw); hIndex = history.length; } resetScreen(); return; }
+  if (name === 'clear') { if (cmd) { cmdHistory.push(raw); hIndex = cmdHistory.length; } resetScreen(); return; }
   print(`<span class="p">visiteur@fdumele:~$</span> ${esc(raw)}`, true);
   if (!cmd) return;
   history.push(raw); hIndex = history.length;
@@ -205,8 +205,8 @@ input.addEventListener('keydown', e => {
   if (autoTyping) { e.preventDefault(); return; }
   if (e.key === 'Escape') { finishTyping(); }
   else if (e.key === 'Enter') { exec(input.value); }
-  else if (e.key === 'ArrowUp') { if (hIndex > 0) { hIndex--; input.value = history[hIndex]; } e.preventDefault(); }
-  else if (e.key === 'ArrowDown') { if (hIndex < history.length - 1) { hIndex++; input.value = history[hIndex]; } else { hIndex = history.length; input.value = ''; } e.preventDefault(); }
+ else if (e.key === 'ArrowUp') { if (hIndex > 0) { hIndex--; input.value = cmdHistory[hIndex]; } e.preventDefault(); }
+else if (e.key === 'ArrowDown') { if (hIndex < cmdHistory.length - 1) { hIndex++; input.value = cmdHistory[hIndex]; } else { hIndex = cmdHistory.length; input.value = ''; } e.preventDefault(); }
   else if (e.key === 'Tab') {
     const v = input.value.trim().toLowerCase();
     if (v) { const m = HELP.map(h => h[0]).filter(c => c.startsWith(v)); if (m.length === 1) input.value = m[0]; else if (m.length > 1) print('<span class="d">' + m.join('   ') + '</span>'); }
