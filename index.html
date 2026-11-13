@@ -1,0 +1,56 @@
+h<!doctype html>
+<html lang="fr">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>François Dumele · Développeur Full Stack</title>
+  <meta name="description" content="François Dumele, développeur full stack Java / Spring Boot / React, basé à Aulnay-sous-Bois (93). CV interactif façon terminal.">
+  <meta property="og:title" content="François Dumele · Développeur Full Stack">
+  <meta property="og:description" content="Développeur full stack Java / Spring Boot / React. CV interactif façon terminal.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1117'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%235fc2b0'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="window">
+      <div class="bar" aria-hidden="true">
+        <i class="dot"></i><i class="dot"></i><i class="dot"></i>
+        <span>visiteur@fdumele: ~/cv</span>
+      </div>
+      <div id="screen">
+        <noscript>
+          <div class="out"><span class="t">François Dumele</span>, Développeur Full Stack
+          <span class="d">Aulnay-sous-Bois (93) · 8 ans de BTP et d'industrie, puis 4 ans de développement web</span>
+
+          <span class="t">## Stack</span>
+            Java · TypeScript · React · Vue.js · Spring Boot · Node.js · PostgreSQL · Docker
+
+          <span class="t">## Dernier poste</span>
+          Développeur Full Stack, Société Générale (sept. 2023 – sept. 2025)
+
+          <span class="t">## Contact</span>
+          <a class="k" href="mailto:fjldumele@gmail.com">fjldumele@gmail.com</a>
+
+          <span class="d">Active JavaScript pour la version interactive du CV.</span></div>
+        </noscript>
+        <div id="log"></div>
+        <div class="inputline">
+          <label for="cmd" class="p">visiteur@fdumele:~$</label>
+          <input id="cmd" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="Tape une commande">
+        </div>
+      </div>
+    </div>
+
+    <div id="sr" class="sr-only" aria-live="polite"></div>
+
+    <nav class="chips" aria-label="Commandes rapides" id="chips"></nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
