@@ -184,7 +184,7 @@ function run(raw) {
   if (name === 'clear') { if (cmd) { cmdHistory.push(raw); hIndex = cmdHistory.length; } resetScreen(); return; }
   print(`<span class="p">visiteur@fdumele:~$</span> ${esc(raw)}`, true);
   if (!cmd) return;
-  cmdhistory.push(raw); hIndex = cmdhistory.length;
+  cmdHistory.push(raw); hIndex = cmdHistory.length;
   if (name === 'help') { print(helpText()); return; }
   if (name === 'all') { ['whoami', 'profil', 'experience', 'formation', 'skills', 'langues', 'interets', 'contact'].forEach(k => print(DATA[k](), true)); return; }
   if (name === 'copy email') {
