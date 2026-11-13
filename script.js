@@ -1,7 +1,7 @@
 // Liens publics : remplis les URL, les lignes vides ne s'affichent pas.
 const LINKS = {
-  github: '',   // ex. 'https://github.com/ton-pseudo'
-  linkedin: ''  // ex. 'https://www.linkedin.com/in/ton-profil'
+  github: 'https://github.com/Xodia-stack',
+  linkedin: 'https://www.linkedin.com/in/fran%C3%A7ois-dumele-53844527b/'
 };
 const EMAIL = 'fjldumele@gmail.com';
 
