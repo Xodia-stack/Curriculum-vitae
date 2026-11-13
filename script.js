@@ -7,7 +7,7 @@ const EMAIL = 'fjldumele@gmail.com';
 
 function linkRow(label, url) {
   if (!url) return '';
-  const shown = url.replace(/^https?:\/\/(www\.)?/, '');
+  const shown = decodeURI(url).replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
   return `<span class="row"><span class="d">${label}</span><a class="k" href="${url}" target="_blank" rel="noopener">${shown}</a></span>`;
 }
 
