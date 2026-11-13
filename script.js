@@ -83,7 +83,7 @@ const log = document.getElementById('log');
 const input = document.getElementById('cmd');
 const screen = document.getElementById('screen');
 const sr = document.getElementById('sr');
-const cmdHistory = []; let hIndex = 0
+const cmdHistory = []; let hIndex = 0;
 
 function esc(s) { return s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 /* ---- Affichage progressif (effet machine à écrire) ---- */
@@ -184,7 +184,7 @@ function run(raw) {
   if (name === 'clear') { if (cmd) { cmdHistory.push(raw); hIndex = cmdHistory.length; } resetScreen(); return; }
   print(`<span class="p">visiteur@fdumele:~$</span> ${esc(raw)}`, true);
   if (!cmd) return;
-  history.push(raw); hIndex = history.length;
+  cmdhistory.push(raw); hIndex = cmdhistory.length;
   if (name === 'help') { print(helpText()); return; }
   if (name === 'all') { ['whoami', 'profil', 'experience', 'formation', 'skills', 'langues', 'interets', 'contact'].forEach(k => print(DATA[k](), true)); return; }
   if (name === 'copy email') {
