@@ -19,7 +19,16 @@ const DATA = {
 <span class="t">François Dumele</span>, Développeur Full Stack
 <span class="d">Aulnay-sous-Bois (93) · 8 ans de BTP et d'industrie, puis 4 ans de développement web</span>
 
-Tape <button class="inline-cmd" data-cmd="help">help</button> pour voir les commandes.`,
+Ravi de te voir passer par ici ! Ce CV se parcourt comme un terminal :
+chaque commande te dévoile une partie de mon parcours.
+
+Pour mieux me connaître, tape une commande ou clique dessus :
+  <button class="inline-cmd" data-cmd="profil">profil</button>       qui je suis, en quelques lignes
+  <button class="inline-cmd" data-cmd="experience">experience</button>   mes postes, du BTP au code
+  <button class="inline-cmd" data-cmd="skills">skills</button>       ma stack technique
+  <button class="inline-cmd" data-cmd="contact">contact</button>      pour m'écrire
+
+<span class="d">Toutes les commandes :</span> <button class="inline-cmd" data-cmd="help">help</button> <span class="d">· le CV complet :</span> <button class="inline-cmd" data-cmd="all">all</button>`,
 
   profil: () => `<span class="t">## Profil</span>
 Développeur full stack au parcours atypique : huit ans dans le BTP et
