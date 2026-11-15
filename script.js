@@ -59,7 +59,7 @@ ${[
 <span class="row"><span class="d">langages</span><span>Java · JavaScript · TypeScript · HTML / CSS</span></span><span class="row"><span class="d">front</span><span>React · Vue.js</span></span><span class="row"><span class="d">back</span><span>Spring Boot · Node.js</span></span><span class="row"><span class="d">données</span><span>PostgreSQL · MySQL · Oracle · MongoDB · Elasticsearch</span></span>
 
 <span class="t">## Outils & méthodes</span>
-<span class="row"><span class="d">devops</span><span>Docker · Kubernetes · Jenkins · CI/CD</span></span><span class="row"><span class="d">cloud</span><span>AWS · Azure</span></span><span class="row"><span class="d">systèmes</span><span>Linux · Apache</span></span><span class="row"><span class="d">outils</span><span>Git · Liquibase</span></span><span class="row"><span class="d">méthodes</span><span>API REST · Tests automatisés · Agile / Scrum · Responsive</span></span>
+<span class="row"><span class="d">devops</span><span>Docker · Kubernetes · Jenkins · CI/CD</span></span><span class="row"><span class="d">cloud</span><span>AWS · Azure</span></span><span class="row"><span class="d">systèmes</span><span>Linux · Apache</span></span><span class="row"><span class="d">outils</span><span>Git · Liquibase</span></span><span class="row"><span class="d">méthodes</span><span>API REST · Tests automatisés (JUnit) · Agile / Scrum · Responsive</span></span>
 <span class="d">atouts :</span> gestion de projet et d'équipe, rigueur, autonomie,
 respect des délais, culture sécurité et qualité`,
 
